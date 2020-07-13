@@ -1,17 +1,18 @@
 {
   "name": "module-example-A",
   "version": "1.0.0",
+  "private": true,
   "description": "A Vue.js project",
   "author": "Keagan Chisnall",
-  "private": true,
   "scripts": {
+    "build": "node build/build.js",
     "dev": "node build/dev-server.js",
-    "start": "node build/dev-server.js",
-    "build": "node build/build.js"
+    "start": "node build/dev-server.js"
   },
   "dependencies": {
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
+    "vuetify": "^2.2.11",
     "vuex": "^2.5.0"
   },
   "devDependencies": {
@@ -39,27 +40,31 @@
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "ora": "^1.3.0",
     "rimraf": "^2.6.2",
+    "sass": "^1.19.0",
+    "sass-loader": "^8.0.0",
     "semver": "^5.4.1",
     "shelljs": "^0.7.8",
     "sw-precache-webpack-plugin": "^0.11.4",
     "uglify-es": "^3.1.3",
     "url-loader": "^0.6.2",
+    "vue-cli-plugin-vuetify": "~2.0.6",
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.0.3",
     "vue-template-compiler": "^2.5.2",
+    "vuetify-loader": "^1.3.0",
     "webpack": "^3.7.1",
     "webpack-bundle-analyzer": "^3.3.2",
     "webpack-dev-middleware": "^1.12.0",
     "webpack-hot-middleware": "^2.19.1",
     "webpack-merge": "^4.1.0"
   },
-  "engines": {
-    "node": ">= 4.0.0",
-    "npm": ">= 3.0.0"
-  },
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  }
 }
